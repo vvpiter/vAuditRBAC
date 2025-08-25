@@ -1,0 +1,22 @@
+roles:
+  - name: "VM PowerOps"
+    description: "Custom role for power operations on VMs"
+    privileges:
+      - "VirtualMachine.Interact.PowerOn"
+      - "VirtualMachine.Interact.PowerOff"
+    assignments:
+      - group: "AD\\VM_Operators"
+        entity: "Cluster1"
+        entityType: "ClusterComputeResource"
+        propagate: true
+
+  - name: "ReadOnly"
+    description: "Limited access for monitoring"
+    privileges:
+      - "System.Anonymous"
+      - "System.Read"
+    assignments:
+      - group: "AD\\ReadOnlyUsers"
+        entity: "Datacenter1"
+        entityType: "Datacenter"
+        propagate: true

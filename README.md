@@ -1,4 +1,4 @@
-# vAuditRBAC – Role-Based Access Control Validator for vCenter
+# vAuditRBAC – Role-Based Access Control Validator for vCenter Server
 
 ## 🎯 Project Objective
 Enable secure and consistent RBAC enforcement across VMware vCenter environments by comparing current roles and permissions to a centrally defined policy hosted in GitHub or Confluence.

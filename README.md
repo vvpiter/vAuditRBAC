@@ -3,7 +3,7 @@
 ## 🎯 Project Objective
 Enable secure and consistent RBAC enforcement across VMware vCenter environments by comparing current roles and permissions to a centrally defined policy hosted in GitHub or Confluence.
 
-## 🧱 How It Works
+## 🧱 How It Works (MVP v1.0)
 1. Connects to vCenter to extract custom roles, privileges, and group assignments.
 2. Retrieves YAML-based role definitions from a source-of-truth web repository.
 3. Compares live data to policy:

@@ -22,7 +22,7 @@ foreach ($policyRole in $policy.roles) {
     $liveRole = $liveRoles | Where-Object { $_.Name -eq $roleName }
 
     if (-not $liveRole) {
-        $report += "❌ Role '$roleName' not found in vCenter"
+        $report += "Role '$roleName' not found in vCenter"
         continue
     }
 
@@ -33,7 +33,7 @@ foreach ($policyRole in $policy.roles) {
     $extra = $livePrivs | Where-Object { $_ -notin $policyPrivs }
 
     if ($missing.Count -gt 0 -or $extra.Count -gt 0) {
-        $report += "⚠️ Role '$roleName' privilege mismatch:"
+        $report += "Role '$roleName' privilege mismatch:"
         if ($missing.Count -gt 0) { $report += "  - Missing: $($missing -join ', ')" }
         if ($extra.Count -gt 0) { $report += "  - Extra: $($extra -join ', ')" }
     }
@@ -47,10 +47,10 @@ foreach ($policyRole in $policy.roles) {
         }
 
         if (-not $found) {
-            $report += "⚠️ Role '$roleName' missing assignment for group '$($assignment.group)' on '$($assignment.entity)'"
+            $report += "Role '$roleName' missing assignment for group '$($assignment.group)' on '$($assignment.entity)'"
         }
     }
 }
 
 $report | Out-File -FilePath ./rbac-drift-report.txt
-Write-Host "✅ Drift report saved to 'rbac-drift-report.txt'"
+Write-Host "Drift report saved to 'rbac-drift-report.txt'"

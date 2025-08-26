@@ -19,13 +19,12 @@ Enable secure and consistent RBAC enforcement across VMware vCenter environments
 - Optional integration with ChatOps (Slack, Teams, vCenter Chat Assistant)
 
 ## 🔧 Tech Stack
-- PowerCLI / Python (pyvmomi)
+- PowerCLI
 - YAML or JSON policy schema
-- Web UI (optional) with Flask or React
 - Confluence API or GitHub raw YAML fetch
 
 ## 🚀 Use Cases
-- Validate production vCenter configurations
+- Validate production vCenter servers RBAC configurations
 - Ensure compliance with internal security policies
 - Automate security reviews and audits
 

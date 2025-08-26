@@ -1,5 +1,5 @@
 roles:
-  - name: "VM PowerOps"
+  - name: "Admins"
     description: "Custom role for power operations on VMs"
     privileges:
       - "VirtualMachine.Interact.PowerOn"
@@ -10,8 +10,18 @@ roles:
         entityType: "ClusterComputeResource"
         propagate: true
 
-  - name: "ReadOnly"
+  - name: "RO"
     description: "Limited access for monitoring"
+    privileges:
+      - "System.Anonymous"
+      - "System.Read"
+    assignments:
+      - group: "AD\\ReadOnlyUsers"
+        entity: "Datacenter1"
+        entityType: "Datacenter"
+        propagate: true
+  - name: "Test"
+    description: "Test"
     privileges:
       - "System.Anonymous"
       - "System.Read"

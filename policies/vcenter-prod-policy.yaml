@@ -1,0 +1,853 @@
+roles:
+- assignments:
+  - group: VSPHERE.LOCAL\folder
+    propagate: true
+    entity: CL
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: VirtualMachinePowerUser1
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Global.CancelTask
+  - Datastore.Browse
+  - VirtualMachine.Interact.PowerOn
+  - VirtualMachine.Interact.PowerOff
+  - VirtualMachine.Interact.Suspend
+  - VirtualMachine.Interact.Reset
+  - VirtualMachine.Interact.AnswerQuestion
+  - VirtualMachine.Interact.ConsoleInteract
+  - VirtualMachine.Interact.DeviceConnection
+  - VirtualMachine.Interact.SetCDMedia
+  - VirtualMachine.Interact.SetFloppyMedia
+  - VirtualMachine.Interact.ToolsInstall
+  - VirtualMachine.Interact.GuestControl
+  - VirtualMachine.Config.Rename
+  - VirtualMachine.Config.AddExistingDisk
+  - VirtualMachine.Config.AddNewDisk
+  - VirtualMachine.Config.RemoveDisk
+  - VirtualMachine.Config.CPUCount
+  - VirtualMachine.Config.Memory
+  - VirtualMachine.Config.AddRemoveDevice
+  - VirtualMachine.Config.EditDevice
+  - VirtualMachine.Config.Settings
+  - VirtualMachine.Config.Resource
+  - VirtualMachine.Config.UpgradeVirtualHardware
+  - VirtualMachine.Config.ResetGuestInfo
+  - VirtualMachine.Config.AdvancedConfig
+  - VirtualMachine.Config.DiskLease
+  - VirtualMachine.State.CreateSnapshot
+  - VirtualMachine.State.RevertToSnapshot
+  - VirtualMachine.State.RemoveSnapshot
+  - VirtualMachine.State.RenameSnapshot
+  - ScheduledTask.Create
+  - ScheduledTask.Delete
+  - ScheduledTask.Run
+  - ScheduledTask.Edit
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: VirtualMachineUser
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Global.CancelTask
+  - VirtualMachine.Interact.PowerOn
+  - VirtualMachine.Interact.PowerOff
+  - VirtualMachine.Interact.Suspend
+  - VirtualMachine.Interact.Reset
+  - VirtualMachine.Interact.AnswerQuestion
+  - VirtualMachine.Interact.ConsoleInteract
+  - VirtualMachine.Interact.DeviceConnection
+  - VirtualMachine.Interact.SetCDMedia
+  - VirtualMachine.Interact.SetFloppyMedia
+  - VirtualMachine.Interact.ToolsInstall
+  - ScheduledTask.Create
+  - ScheduledTask.Delete
+  - ScheduledTask.Run
+  - ScheduledTask.Edit
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: ResourcePoolAdministrator
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Global.SetCustomField
+  - Global.LogEvent
+  - Global.CancelTask
+  - Folder.Create
+  - Folder.Delete
+  - Folder.Rename
+  - Folder.Move
+  - Datastore.Browse
+  - VirtualMachine.Inventory.Create
+  - VirtualMachine.Inventory.CreateFromExisting
+  - VirtualMachine.Inventory.Register
+  - VirtualMachine.Inventory.Delete
+  - VirtualMachine.Inventory.Unregister
+  - VirtualMachine.Inventory.Move
+  - VirtualMachine.Interact.PowerOn
+  - VirtualMachine.Interact.PowerOff
+  - VirtualMachine.Interact.Suspend
+  - VirtualMachine.Interact.Reset
+  - VirtualMachine.Interact.AnswerQuestion
+  - VirtualMachine.Interact.ConsoleInteract
+  - VirtualMachine.Interact.DeviceConnection
+  - VirtualMachine.Interact.SetCDMedia
+  - VirtualMachine.Interact.SetFloppyMedia
+  - VirtualMachine.Interact.ToolsInstall
+  - VirtualMachine.Config.Rename
+  - VirtualMachine.Config.AddExistingDisk
+  - VirtualMachine.Config.AddNewDisk
+  - VirtualMachine.Config.RemoveDisk
+  - VirtualMachine.Config.RawDevice
+  - VirtualMachine.Config.CPUCount
+  - VirtualMachine.Config.Memory
+  - VirtualMachine.Config.AddRemoveDevice
+  - VirtualMachine.Config.EditDevice
+  - VirtualMachine.Config.Settings
+  - VirtualMachine.Config.Resource
+  - VirtualMachine.Config.UpgradeVirtualHardware
+  - VirtualMachine.Config.ResetGuestInfo
+  - VirtualMachine.Config.AdvancedConfig
+  - VirtualMachine.Config.DiskLease
+  - VirtualMachine.State.CreateSnapshot
+  - VirtualMachine.State.RevertToSnapshot
+  - VirtualMachine.State.RemoveSnapshot
+  - VirtualMachine.State.RenameSnapshot
+  - VirtualMachine.Provisioning.Customize
+  - VirtualMachine.Provisioning.Clone
+  - VirtualMachine.Provisioning.CreateTemplateFromVM
+  - VirtualMachine.Provisioning.DeployTemplate
+  - VirtualMachine.Provisioning.CloneTemplate
+  - VirtualMachine.Provisioning.MarkAsTemplate
+  - VirtualMachine.Provisioning.MarkAsVM
+  - VirtualMachine.Provisioning.ReadCustSpecs
+  - VirtualMachine.Provisioning.ModifyCustSpecs
+  - VirtualMachine.Provisioning.DiskRandomAccess
+  - VirtualMachine.Provisioning.DiskRandomRead
+  - VirtualMachine.Provisioning.GetVmFiles
+  - VirtualMachine.Provisioning.PutVmFiles
+  - Resource.AssignVMToPool
+  - Resource.CreatePool
+  - Resource.RenamePool
+  - Resource.EditPool
+  - Resource.MovePool
+  - Resource.DeletePool
+  - Resource.HotMigrate
+  - Resource.ColdMigrate
+  - Resource.QueryVMotion
+  - Alarm.Create
+  - Alarm.Delete
+  - Alarm.Edit
+  - ScheduledTask.Create
+  - ScheduledTask.Delete
+  - ScheduledTask.Run
+  - ScheduledTask.Edit
+  - Authorization.ModifyPermissions
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: VMwareConsolidatedBackupUser
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - VirtualMachine.Config.DiskLease
+  - VirtualMachine.State.CreateSnapshot
+  - VirtualMachine.State.RemoveSnapshot
+  - VirtualMachine.Provisioning.DiskRandomRead
+  - VirtualMachine.Provisioning.GetVmFiles
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: DatastoreConsumer
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Datastore.AllocateSpace
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: NetworkConsumer
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Network.Assign
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: VirtualMachineConsoleUser
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - VirtualMachine.Interact.PowerOn
+  - VirtualMachine.Interact.PowerOff
+  - VirtualMachine.Interact.Suspend
+  - VirtualMachine.Interact.Reset
+  - VirtualMachine.Interact.AnswerQuestion
+  - VirtualMachine.Interact.ConsoleInteract
+  - VirtualMachine.Interact.DeviceConnection
+  - VirtualMachine.Interact.SetCDMedia
+  - VirtualMachine.Interact.SetFloppyMedia
+  - VirtualMachine.Interact.ToolsInstall
+- assignments:
+  - group: VSPHERE.LOCAL\AutoUpdate
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: AutoUpdateUser
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Global.LogEvent
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: InventoryService.Tagging.TaggingAdmin
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - InventoryService.Tagging.ModifyUsedByForTag
+  - InventoryService.Tagging.EditCategory
+  - InventoryService.Tagging.DeleteCategory
+  - InventoryService.Tagging.CreateTag
+  - InventoryService.Tagging.DeleteTag
+  - InventoryService.Tagging.AttachTag
+  - InventoryService.Tagging.EditTag
+  - InventoryService.Tagging.CreateCategory
+  - InventoryService.Tagging.ModifyUsedByForCategory
+  - InventoryService.Tagging.ObjectAttachable
+- assignments:
+  - group: VSPHERE.LOCAL\SyncUsers
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: SyncUsers
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - InventoryService.Tagging.ModifyUsedByForTag
+  - ReplicationService.Administer
+  - InventoryService.Tagging.EditCategory
+  - CertificateManagement.Manage
+  - IntercomNamespace.Write
+  - SettingsStore.Manage
+  - InventoryService.Tagging.DeleteCategory
+  - InventoryService.Tagging.CreateTag
+  - HLM.Create
+  - InventoryService.Tagging.DeleteTag
+  - InventoryService.Tagging.AttachTag
+  - InventoryService.Tagging.EditTag
+  - InventoryService.Tagging.CreateCategory
+  - InventoryService.Tagging.ModifyUsedByForCategory
+  - Trust.Manage
+  - HLM.Manage
+  - IntercomNamespace.Read
+- assignments:
+  - group: VSPHERE.LOCAL\vsphere-webclient-8dd002e3-3b62-4c76-ab05-9664eab5502f
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  - group: VSPHERE.LOCAL\vsphere-ui-8dd002e3-3b62-4c76-ab05-9664eab5502f
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  - group: VSPHERE.LOCAL\vSphereClientSolutionUsers
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: vSphere Client Solution User
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Global.LogEvent
+  - Global.Proxy
+  - Task.Create
+  - Task.Update
+  - Extension.Register
+  - Extension.Update
+  - Extension.Unregister
+  - ServiceAccount.Administer
+  - VcIdentityProviders.Read
+  - IntercomNamespace.Read
+- assignments:
+  - group: VSPHERE.LOCAL\WorkloadStorage
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: WorkloadStorageManagement
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Datastore.FileManagement
+  - Datastore.AllocateSpace
+  - Host.Config.Storage
+  - VirtualMachine.Inventory.Create
+  - VirtualMachine.Inventory.Delete
+  - VirtualMachine.Config.AddExistingDisk
+  - VirtualMachine.Config.AddNewDisk
+  - VirtualMachine.Config.RemoveDisk
+  - VirtualMachine.Config.AddRemoveDevice
+  - VirtualMachine.Config.Settings
+  - Resource.AssignVMToPool
+  - Resource.HotMigrate
+  - Resource.ColdMigrate
+  - EAM.Modify
+  - Cns.Searchable
+  - StorageProfile.View
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: vSphereKubernetesManager
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Datastore.AllocateSpace
+  - VirtualMachine.Inventory.Create
+  - VirtualMachine.Inventory.Delete
+  - VirtualMachine.Interact.PowerOn
+  - VirtualMachine.Interact.PowerOff
+  - VirtualMachine.Interact.DeviceConnection
+  - VirtualMachine.Config.AddNewDisk
+  - VirtualMachine.Config.AddRemoveDevice
+  - VirtualMachine.Config.EditDevice
+  - Resource.AssignVMToPool
+  - Cryptographer.EncryptNew
+  - Cryptographer.Encrypt
+  - Cryptographer.Migrate
+  - Cryptographer.Recrypt
+  - Cryptographer.AddDisk
+  - Cryptographer.Clone
+  - ContentLibrary.ManageClusterRegistryResource
+- assignments:
+  - group: VSPHERE.LOCAL\RegistryAdministrators
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: com.vmware.Content.Registry.Admin
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - ContentLibrary.ManageRegistry
+  - ContentLibrary.ManageRegistryProject
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: SupervisorServiceCluster
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Host.Inventory.EditCluster
+  - Namespaces.Configure
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: SupervisorServiceRootFolder
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - StorageProfile.Update
+  - StorageProfile.View
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: SupervisorServiceGlobal
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - CertificateAuthority.Manage
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: VMOperatorController
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Folder.Create
+  - Folder.Delete
+  - Datastore.AllocateSpace
+  - Network.Assign
+  - VirtualMachine.Inventory.Create
+  - VirtualMachine.Inventory.CreateFromExisting
+  - VirtualMachine.Inventory.Register
+  - VirtualMachine.Inventory.Delete
+  - VirtualMachine.Inventory.Unregister
+  - VirtualMachine.Inventory.Move
+  - VirtualMachine.Interact.PowerOn
+  - VirtualMachine.Interact.PowerOff
+  - VirtualMachine.Interact.Suspend
+  - VirtualMachine.Interact.SuspendToMemory
+  - VirtualMachine.Interact.Reset
+  - VirtualMachine.Interact.Pause
+  - VirtualMachine.Interact.AnswerQuestion
+  - VirtualMachine.Interact.ConsoleInteract
+  - VirtualMachine.Interact.DeviceConnection
+  - VirtualMachine.Interact.SetCDMedia
+  - VirtualMachine.Interact.SetFloppyMedia
+  - VirtualMachine.Interact.ToolsInstall
+  - VirtualMachine.Interact.GuestControl
+  - VirtualMachine.Interact.DefragmentAllDisks
+  - VirtualMachine.Interact.Backup
+  - VirtualMachine.Interact.CreateScreenshot
+  - VirtualMachine.Interact.PutUsbScanCodes
+  - VirtualMachine.Interact.SESparseMaintenance
+  - VirtualMachine.Interact.DnD
+  - VirtualMachine.GuestOperations.Query
+  - VirtualMachine.GuestOperations.Modify
+  - VirtualMachine.GuestOperations.Execute
+  - VirtualMachine.GuestOperations.QueryAliases
+  - VirtualMachine.GuestOperations.ModifyAliases
+  - VirtualMachine.Config.Rename
+  - VirtualMachine.Config.Annotation
+  - VirtualMachine.Config.AddExistingDisk
+  - VirtualMachine.Config.AddNewDisk
+  - VirtualMachine.Config.RemoveDisk
+  - VirtualMachine.Config.RawDevice
+  - VirtualMachine.Config.HostUSBDevice
+  - VirtualMachine.Config.CPUCount
+  - VirtualMachine.Config.Memory
+  - VirtualMachine.Config.AddRemoveDevice
+  - VirtualMachine.Config.EditDevice
+  - VirtualMachine.Config.Settings
+  - VirtualMachine.Config.Resource
+  - VirtualMachine.Config.UpgradeVirtualHardware
+  - VirtualMachine.Config.ResetGuestInfo
+  - VirtualMachine.Config.AdvancedConfig
+  - VirtualMachine.Config.DiskLease
+  - VirtualMachine.Config.SwapPlacement
+  - VirtualMachine.Config.DiskExtend
+  - VirtualMachine.Config.ChangeTracking
+  - VirtualMachine.Config.QueryUnownedFiles
+  - VirtualMachine.Config.ReloadFromPath
+  - VirtualMachine.Config.QueryFTCompatibility
+  - VirtualMachine.Config.MksControl
+  - VirtualMachine.Config.ManagedBy
+  - VirtualMachine.State.CreateSnapshot
+  - VirtualMachine.State.RevertToSnapshot
+  - VirtualMachine.State.RemoveSnapshot
+  - VirtualMachine.State.RenameSnapshot
+  - VirtualMachine.Hbr.ConfigureReplication
+  - VirtualMachine.Hbr.ReplicaManagement
+  - VirtualMachine.Hbr.MonitorReplication
+  - VirtualMachine.Provisioning.Customize
+  - VirtualMachine.Provisioning.Clone
+  - VirtualMachine.Provisioning.PromoteDisks
+  - VirtualMachine.Provisioning.CreateTemplateFromVM
+  - VirtualMachine.Provisioning.DeployTemplate
+  - VirtualMachine.Provisioning.CloneTemplate
+  - VirtualMachine.Provisioning.MarkAsTemplate
+  - VirtualMachine.Provisioning.MarkAsVM
+  - VirtualMachine.Provisioning.ReadCustSpecs
+  - VirtualMachine.Provisioning.ModifyCustSpecs
+  - VirtualMachine.Provisioning.DiskRandomAccess
+  - VirtualMachine.Provisioning.DiskRandomRead
+  - VirtualMachine.Provisioning.FileRandomAccess
+  - VirtualMachine.Provisioning.GetVmFiles
+  - VirtualMachine.Provisioning.PutVmFiles
+  - VirtualMachine.Namespace.Management
+  - VirtualMachine.Namespace.Query
+  - VirtualMachine.Namespace.ModifyContent
+  - VirtualMachine.Namespace.ReadContent
+  - VirtualMachine.Namespace.Event
+  - VirtualMachine.Namespace.EventNotify
+  - Resource.AssignVMToPool
+  - Resource.AssignVAppToPool
+  - Resource.ApplyRecommendation
+  - Resource.CreatePool
+  - Resource.RenamePool
+  - Resource.EditPool
+  - Resource.MovePool
+  - Resource.DeletePool
+  - Resource.HotMigrate
+  - Resource.ColdMigrate
+  - Resource.QueryVMotion
+  - VApp.ResourceConfig
+  - VApp.InstanceConfig
+  - VApp.ApplicationConfig
+  - VApp.ManagedByConfig
+  - VApp.Export
+  - VApp.Import
+  - VApp.ExtractOvfEnvironment
+  - VApp.AssignVM
+  - VApp.AssignResourcePool
+  - VApp.AssignVApp
+  - VApp.Clone
+  - VApp.Create
+  - VApp.Delete
+  - VApp.Unregister
+  - VApp.Move
+  - VApp.PowerOn
+  - VApp.PowerOff
+  - VApp.Suspend
+  - VApp.Rename
+  - Cryptographer.Access
+  - Cryptographer.EncryptNew
+  - Cryptographer.Encrypt
+  - Cryptographer.Migrate
+  - Cryptographer.Recrypt
+  - Cryptographer.AddDisk
+  - Cryptographer.Clone
+  - InventoryService.Tagging.AttachTag
+  - InventoryService.Tagging.ObjectAttachable
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: VMOperatorControllerGlobal
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - ContentLibrary.CheckOutTemplate
+  - ContentLibrary.UpdateLibraryItem
+  - ContentLibrary.DownloadSession
+  - ContentLibrary.SyncLibraryItem
+  - InventoryService.Tagging.AttachTag
+  - ContentLibrary.AddLibraryItem
+  - ContentLibrary.SyncLibrary
+  - InventoryService.Tagging.ObjectAttachable
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: NSOperatorController
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Namespaces.Configure
+- assignments:
+  - group: VSPHERE.LOCAL\topologysvc-8dd002e3-3b62-4c76-ab05-9664eab5502f
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: TopologysvcUser
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Global.LogEvent
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: NetOperatorController
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Network.Assign
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: PodVmLifeCycleManager
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Datastore.FileManagement
+  - Datastore.AllocateSpace
+  - Network.Assign
+  - Host.Config.Storage
+  - VirtualMachine.Inventory.Create
+  - VirtualMachine.Inventory.Delete
+  - VirtualMachine.Config.AddExistingDisk
+  - VirtualMachine.Config.AddNewDisk
+  - VirtualMachine.Config.RemoveDisk
+  - VirtualMachine.Config.AddRemoveDevice
+  - VirtualMachine.Config.Settings
+  - Resource.AssignVMToPool
+  - Resource.ColdMigrate
+  - EAM.Modify
+  - Cns.Searchable
+  - StorageProfile.View
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: NamespacesQueryRole
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Namespaces.ListAccess
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: CNS-SUPERVISOR-SEARCH-AND-SPBM
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Cns.Searchable
+  - StorageProfile.View
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: CNS-SUPERVISOR-HOST-CONFIG-STORAGE-AND-CNS-VM
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Host.Config.Storage
+  - VirtualMachine.Config.AddExistingDisk
+  - VirtualMachine.Config.RemoveDisk
+  - VirtualMachine.Config.AddRemoveDevice
+  - Resource.HotMigrate
+  - Resource.ColdMigrate
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: VMImageServiceGlobal
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - ContentLibrary.UpdateSession
+  - ContentLibrary.AddLibraryItem
+  - ContentLibrary.DeleteLibraryItem
+- assignments:
+  - group: VSPHERE.LOCAL\vmware-vsm-8dd002e3-3b62-4c76-ab05-9664eab5502f
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: VsmSvcRole
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Sessions.TerminateSession
+  - Extension.Update
+  - VApp.ApplicationConfig
+- assignments:
+  - group: VSPHERE.LOCAL\vStatsGroup
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: vStatsAdmin
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - vStats.CollectAny
+  - vStats.Settings
+  - vStats.QueryAny
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: CNS-SUPERVISOR-DATASTORE
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Datastore.FileManagement
+  - Datastore.AllocateSpace
+- assignments:
+  - group: VSPHERE.LOCAL\applmgmtSvcUsers
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: applmgmtSvcRole
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Extension.Update
+- assignments:
+  - group: VSPHERE.LOCAL\perfcharts-8dd002e3-3b62-4c76-ab05-9664eab5502f
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: PerfchartsSvcRole
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+- assignments:
+  - group: VSPHERE.LOCAL\observability-vapi-8dd002e3-3b62-4c76-ab05-9664eab5502f
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: ObservabilityVapiSvcRole
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+- assignments:
+  - group: VSPHERE.LOCAL\NsxViAdministrators
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: NsxViAdministrator
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Nsx.Manage
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: com.vmware.Content.Admin
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - ContentLibrary.CheckOutTemplate
+  - ContentLibrary.CreateSubscribedLibrary
+ 
+  - ContentLibrary.ManageRegistry
+  - ContentLibrary.UpdateConfiguration
+  - ContentLibrary.ManageRegistryProject
+  - ContentLibrary.DownloadSession
+  - ContentLibrary.EvictSubscribedLibrary
+  - ContentLibrary.EvictLibraryItem
+  - ContentLibrary.SyncLibraryItem
+  - ContentLibrary.ReadStorage
+  - ContentLibrary.PublishLibrary
+  - ContentLibrary.PublishLibraryItem
+  - ContentLibrary.AddCertToTrustStore
+  - ContentLibrary.TypeIntrospection
+  - ContentLibrary.UpdateSession
+  - ContentLibrary.UpdateSubscribedLibrary
+  - ContentLibrary.DeleteSubscription
+  - ContentLibrary.AddLibraryItem
+  - ContentLibrary.DeleteSubscribedLibrary
+  - ContentLibrary.DeleteLibraryItem
+  - ContentLibrary.GetConfiguration
+  - ContentLibrary.DeleteLocalLibrary
+  - ContentLibrary.ProbeSubscription
+  - ContentLibrary.SyncLibrary
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: VMServicesAdministrator
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Namespaces.Manage
+  - VirtualMachineClasses.Manage
+  - Namespaces.Configure
+- assignments:
+  - group: VSPHERE.LOCAL\NsxAuditors
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: NsxAuditor
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Nsx.Read
+- assignments: []
+  description: Exported from vCenter vcsa.vlab.int
+  name: Test
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - AutoDeploy.Host.AssociateMachine
+- assignments:
+  - group: VSPHERE.LOCAL\Administrators
+    propagate: true
+    entity: vCLS
+    entityType: FolderImpl
+  - group: VSPHERE.LOCAL\vCLSAdmin
+    propagate: true
+    entity: vCLS
+    entityType: FolderImpl
+  - group: VSPHERE.LOCAL\Administrators
+    propagate: false
+    entity: vCLS-4c4c4544-004e-3310-8054-b7c04f384633
+    entityType: VirtualMachineImpl
+  - group: VSPHERE.LOCAL\vCLSAdmin
+    propagate: false
+    entity: vCLS-4c4c4544-004e-3310-8054-b7c04f384633
+    entityType: VirtualMachineImpl
+  - group: VSPHERE.LOCAL\Administrators
+    propagate: false
+    entity: vCLS-4c4c4544-0054-5a10-8048-b3c04f594c33
+    entityType: VirtualMachineImpl
+  - group: VSPHERE.LOCAL\vCLSAdmin
+    propagate: false
+    entity: vCLS-4c4c4544-0054-5a10-8048-b3c04f594c33
+    entityType: VirtualMachineImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: vCLSAdmin
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Global.Settings
+  - VirtualMachine.Interact.PowerOff
+  - VirtualMachine.Interact.ConsoleInteract
+  - VirtualMachine.GuestOperations.Query
+  - VirtualMachine.GuestOperations.Execute
+  - VirtualMachine.Config.Settings
+  - Resource.HotMigrate
+  - Resource.ColdMigrate
+  - Cryptographer.ManageKeys
+  - Cryptographer.ManageKeyServers
+  - Cryptographer.ReadKeyServersInfo
+  - Cryptographer.ManageEncryptionPolicy
+  - Cryptographer.Access
+  - Cryptographer.RegisterHost
+  - Cryptographer.EncryptNew
+  - Cryptographer.Encrypt
+  - Cryptographer.Decrypt
+  - Cryptographer.RegisterVM
+  - Cryptographer.Migrate
+  - Cryptographer.Recrypt
+  - Cryptographer.AddDisk
+  - Cryptographer.Clone
+  - InventoryService.Tagging.ObjectAttachable
+- assignments:
+  - group: VSPHERE.LOCAL\cl-test
+    propagate: true
+    entity: Datacenters
+    entityType: FolderImpl
+  description: Exported from vCenter vcsa.vlab.int
+  name: CL-user
+  privileges:
+  - System.Anonymous
+  - System.View
+  - System.Read
+  - Datastore.AllocateSpace
+  - Network.Assign
+  - VirtualMachine.State.CreateSnapshot
+  - VirtualMachine.State.RevertToSnapshot
+  - VirtualMachine.State.RemoveSnapshot
+  - VirtualMachine.State.RenameSnapshot
+  - VirtualMachine.Provisioning.Customize
+  - VirtualMachine.Provisioning.Clone
+  - VirtualMachine.Provisioning.PromoteDisks
+  - VirtualMachine.Provisioning.CreateTemplateFromVM
+  - VirtualMachine.Provisioning.DeployTemplate
+  - VirtualMachine.Provisioning.CloneTemplate
+  - VirtualMachine.Provisioning.MarkAsTemplate
+  - VirtualMachine.Provisioning.MarkAsVM
+  - VirtualMachine.Provisioning.ReadCustSpecs
+  - VirtualMachine.Provisioning.ModifyCustSpecs
+  - VirtualMachine.Provisioning.DiskRandomAccess
+  - VirtualMachine.Provisioning.DiskRandomRead
+  - VirtualMachine.Provisioning.FileRandomAccess
+  - VirtualMachine.Provisioning.GetVmFiles
+  - VirtualMachine.Provisioning.PutVmFiles
+  - ContentLibrary.CheckOutTemplate
+  - ContentLibrary.UpdateLocalLibrary
+  - ContentLibrary.UpdateLibraryItem
+  - ContentLibrary.CheckInTemplate
+  - ContentLibrary.UpdateLibrary
+  - ContentLibrary.SyncLibraryItem
+  - ContentLibrary.ReadStorage
+  - ContentLibrary.UpdateSession
+  - ContentLibrary.AddLibraryItem
+  - ContentLibrary.DeleteLibraryItem
+  - ContentLibrary.GetConfiguration
+  - ContentLibrary.SyncLibrary
+
